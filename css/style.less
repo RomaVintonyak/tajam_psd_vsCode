@@ -430,17 +430,17 @@ p {
   font-weight: bold;
   line-height: 1.2;
 }
-.works_navi{
+.works_navi {
   display: flex;
   align-items: center;
 }
-.works_navi span{
-    font-size: 14px;
-    color: rgb(65, 61, 75);
-    line-height: 1.2;
-    margin-right: 5px;
-  }
-.navi_button{
+.works_navi span {
+  font-size: 14px;
+  color: rgb(65, 61, 75);
+  line-height: 1.2;
+  margin-right: 5px;
+}
+.navi_button {
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -451,24 +451,96 @@ p {
   border-right: 2px solid #c6c4c9;
   transform: rotate(-45deg);
 }
-.works_img{
+.works_img {
   display: flex;
   flex-wrap: wrap;
-  }
-.img_content1{
+}
+.img_content1 {
   width: 10%;
   height: 200px;
 }
-.img_content2{
+.img_content2 {
   width: 20%;
   height: 200px;
   background-color: #acacac;
 }
-.works_button{
+.works_button {
   margin: 70px 0;
   text-align: center;
 }
 /*developer section*/
-.developer_intro{
-  
+.developer_intro {
+  background: url(../img/developer/dev_bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
+.developer_content {
+  width: 100%;
+  height: 100%;
+  margin: 65px 0;
+  padding: 0 90px;
+  text-align: center;
+}
+.developer_icon {
+  color: rgba(255, 255, 255, 0.902);
+  line-height: 0.22;
+  margin-bottom: 45px;
+}
+.developer_text {
+  font-size: 16px;
+  font-family: "Playfair Display", sans-serif;
+  color: rgba(255, 255, 255, 0.851);
+  line-height: 1.625;
+  margin-bottom: 50px;
+}
+.developer_title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  line-height: 1.571;
+  margin-bottom: 10px;
+}
+.developer_suptitle {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.702);
+  line-height: 1.692;
+}
+.developer_img{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_logo{
+  padding: 0 10px;
+}
+.prew{
+  text-decoration: none;
+  font-size: 0;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-bottom: 2px solid #9f9f9f;
+  border-left: 2px solid #9f9f9f;
+  margin-right: 20px;
+  transform: rotate(45deg);
+}
+.next{
+  text-decoration: none;
+  font-size: 0;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-bottom: 2px solid #9f9f9f;
+  border-right: 2px solid #9f9f9f;
+  margin-left: 20px;
+  transform: rotate(-45deg);
+}
+/**/
