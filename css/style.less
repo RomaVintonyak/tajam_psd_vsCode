@@ -18,6 +18,9 @@ h5,
 h6 {
   margin: 0;
 }
+p {
+  margin: 0;
+}
 *,
 *::before,
 *::after {
@@ -237,12 +240,11 @@ h6 {
   border-left: none;
   border-right: none;
   position: relative;
-  margin-bottom: 500px;
 }
-.video_content{
+.video_content {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -253,7 +255,7 @@ h6 {
   opacity: 0.9;
   width: 100%;
 }
-.video_overlay{
+.video_overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -266,7 +268,7 @@ h6 {
     rgba(80, 63, 118, 0.6) 100%
   );
 }
-.video_title{
+.video_title {
   width: 100%;
   height: 100%;
   display: flex;
@@ -275,14 +277,86 @@ h6 {
   justify-content: center;
   position: absolute;
 }
-.watch_title{
-    font-size: 16px;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
+.watch_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
 }
-.watch_icon{
-color: #ffffff;
-cursor: pointer;
-margin-bottom: 30px;
+.watch_icon {
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/*expirience section*/
+.expirience_block {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.title_content {
+  margin-top: 70px;
+  text-align: center;
+}
+.expirience_title {
+  font-size: 22px;
+  font-family: "Playfair Display", sans-serif;
+  color: rgb(65, 61, 75);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.expirience_suptitle {
+  font-size: 14px;
+  font-family: "Playfair Display" sans-serif;
+  color: rgba(47, 45, 53, 0.749);
+  line-height: 1.2;
+}
+.expirience_suptitle::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #c6c4c9;
+  margin-top: 25px;
+}
+.expirience_content {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.expirience_item {
+  text-align: center;
+  max-width: 33.33333%;
+  padding: 50px 30px;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.expirience_item:nth-child(3) {
+  border-right: none;
+}
+.expirience_item:nth-child(4) {
+  border-bottom: none;
+}
+.expirience_item:nth-child(5) {
+  border-bottom: none;
+}
+.expirience_item:nth-child(6) {
+  border-bottom: none;
+  border-right: none;
+}
+.item_img {
+  margin-bottom: 35px;
+}
+.item_title {
+  font-size: 14px;
+  color: rgb(65, 61, 75);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.item_suptitle {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.749);
+  line-height: 1.571;
 }
