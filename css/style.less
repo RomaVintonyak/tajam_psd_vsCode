@@ -735,4 +735,49 @@ p {
   text-align: right;
   width: 60%;
 }
+/*media queris*/
+// Extra large devices (large desktops 1200px)
+@media (max-width: 1200px) { 
+  /*nav*/
+  .nav_menu{
+    margin-right: 15px;
+  }
+}
+// Large devices (desktops 992px)
+@media (max-width: 992px) { 
+
+}
+// Medium devices (tablets 768px)
+@media (max-width: 768px) {
+  /*nav*/
+  .nav_menu{
+    display: none;
+  }
+  .burger_button{
+    display: block;
+    margin-right: 15px;
+  }
+  /*intro*/
+  .intro_inner{
+    margin-top: 200px;
+  }
+}
+// Small devices (landscape phones 576px)
+@media (max-width: 576px) { 
+  /*intro*/
+  .intro_inner{
+    padding: 0 50px;
+  }
+  .intro_title{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .intro_title::after{
+    margin-top: 20px;
+  }
+  .intro_text{
+    margin-bottom: 20px;
+  }
+
+}
 
