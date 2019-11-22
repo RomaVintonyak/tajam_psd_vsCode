@@ -47,7 +47,7 @@ p {
 }
 .header_content.fixed {
   padding: 10px 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
   position: fixed;
   height: 55px;
   top: 0;
@@ -55,9 +55,9 @@ p {
   left: 0;
   background: linear-gradient(
     90deg,
-    rgba(47, 42, 79, 0.8) 0%,
-    rgba(65, 54, 101, 0.8) 50%,
-    rgba(80, 63, 118, 0.8) 100%
+    rgba(47, 42, 79, 0.9) 0%,
+    rgba(65, 54, 101, 0.9) 50%,
+    rgba(80, 63, 118, 0.9) 100%
   );
 }
 .header_logo {
@@ -129,10 +129,12 @@ p {
 .burger_icon.show::before {
   transform-origin: left top;
   transform: rotate(-45deg) translate3d(14px, -1px, 0);
+  transition: all 0.6s linear;
 }
 .burger_icon.show::after {
   transform-origin: right bottom;
   transform: rotate(45deg) translate3d(4px, 3px, 0);
+  transition: all 0.6s linear;
 }
 .burger_icon::before {
   content: "";
@@ -765,14 +767,15 @@ p {
 /*scroll button*/
 #back_top {
   display: block;
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid #000000;
-  border-right: 2px solid #000000;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
   transform: rotate(-45deg);
-  margin-left: 30px;
   cursor: pointer;
   position: fixed;
+  bottom: 35px;
+  left: 10px;
   z-index: 1;
 }
 #back_top a {
