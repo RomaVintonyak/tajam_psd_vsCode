@@ -45,6 +45,21 @@ p {
   height: 80px;
   display: flex;
 }
+.header_content.fixed {
+  padding: 10px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  height: 55px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(47, 42, 79, 0.9) 0%,
+    rgba(65, 54, 101, 0.9) 50%,
+    rgba(80, 63, 118, 0.9) 100%
+  );
+}
 .header_logo {
   display: flex;
   align-items: center;
@@ -107,6 +122,17 @@ p {
   color: transparent;
   font-size: 0;
   position: relative;
+}
+.burger_icon.show {
+  background-color: transparent;
+}
+.burger_icon.show::before {
+  transform-origin: left top;
+  transform: rotate(-45deg) translate3d(14px, -1px, 0);
+}
+.burger_icon.show::after {
+  transform-origin: right bottom;
+  transform: rotate(45deg) translate3d(4px, 3px, 0);
 }
 .burger_icon::before {
   content: "";
@@ -852,7 +878,7 @@ p {
     margin: 0 0;
     flex-direction: column;
     position: absolute;
-    top: 80%;
+    top: 100%;
     right: 0;
     text-align: right;
     background: linear-gradient(
