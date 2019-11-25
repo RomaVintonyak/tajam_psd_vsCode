@@ -544,7 +544,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+ }
 .img_logo {
   padding: 0 10px;
 }
@@ -740,6 +740,12 @@ p {
   border: 1px solid #ffffff;
   padding: 10px 12px;
   margin-right: 12px;
+  transition: all 0.5s linear;
+}
+.icon:hover{
+  background: #a29ab4;
+  opacity: 0.9;
+  cursor: pointer;
 }
 .icon:last-child {
   margin-right: 0;
@@ -777,6 +783,18 @@ p {
   bottom: 35px;
   left: 10px;
   z-index: 1;
+  opacity: 0.6;
+  
+}
+#back_top ::after{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #000000;
+  transform: rotate(45deg)
+  translate3d(-9px, -6px, 0);
+ 
 }
 #back_top a {
   text-decoration: none;
@@ -934,6 +952,9 @@ p {
   .expirience_item {
     max-width: 50%;
     border: 1px solid #ebebeb;
+  }
+  .expirience_item:hover{
+    box-shadow: blanchedalmond;
   }
   .expirience_item:nth-child(3) {
     border: 1px solid #ebebeb;

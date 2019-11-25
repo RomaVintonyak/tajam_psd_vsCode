@@ -51,7 +51,7 @@ $(function() {
   var introH = $("#intro").innerHeight(),
     header = $(".header_content"),
     scrollOffset = $(window).scrollTop();
-    checkScroll(scrollOffset);
+  checkScroll(scrollOffset);
   /*fixed header*/
   $(window).on("scroll", function() {
     scrollOffset = $(this).scrollTop();
@@ -67,9 +67,21 @@ $(function() {
       header.removeClass("fixed");
     }
   }
-    /*clas show for burger button*/
-    $("#navToggle").on("click", function(event) {
-        event.preventDefault();
-        $(".burger_icon").toggleClass("show");
-      });
+  /*clas show for burger button*/
+  $("#navToggle").on("click", function(event) {
+    event.preventDefault();
+    $(".burger_icon").toggleClass("show");
+  });
+  /*reviews slider https://kenwheeler.github.io/slick/*/
+  var slider = $("#developersSlider");
+  slider.slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    arrows: false,
+    dots: true
+  });
 });
